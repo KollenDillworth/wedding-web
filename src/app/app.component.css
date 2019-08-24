@@ -1,0 +1,29 @@
+.full-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+}
+
+.section-top{
+    padding-top: 13rem;
+}
+
+.section{
+    position: relative;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem; 
+}
+
+.bg-cover{
+    background-image: url(/assets/images/cover-photo.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
