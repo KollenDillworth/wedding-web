@@ -9,6 +9,9 @@
     left: 0;
     right: 0;
 }
+.nav-bg-main{
+    background-color: transparent;
+}
 
 .bg-cover2{
     background-color: gray;
