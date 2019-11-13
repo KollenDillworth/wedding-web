@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BridalPageComponent } from './bridal-page/bridal-page.component';
 import { NavComponent } from './nav/nav.component';
+import { TheWeddingPageComponent } from './the-wedding-page/the-wedding-page.component';
+import { OurStoryPageComponent } from './our-story-page/our-story-page.component';
+import { PhotosPageComponent } from './photos-page/photos-page.component';
+import { RegistryPageComponent } from './registry-page/registry-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BridalPageComponent,
-    NavComponent
+    NavComponent,
+    TheWeddingPageComponent,
+    OurStoryPageComponent,
+    PhotosPageComponent,
+    RegistryPageComponent
   ],
   imports: [
     BrowserModule,

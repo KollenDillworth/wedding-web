@@ -13,6 +13,10 @@
     background-color: transparent;
 }
 
+.text-spacing{
+    letter-spacing: 6px;
+}
+
 .bg-cover2{
     background-color: gray;
     opacity: 0.5;
@@ -57,12 +61,14 @@
 
  @media  (min-width: 992px) { 
     .section-pad{
-        padding-top:5rem;
+        padding-top:3rem;
+        padding-bottom:3rem;
     }
 }
  @media  (max-width: 991.98px) { 
     .section-pad{
         padding-top:1rem;
+        padding-bottom:1rem;
     }
 }
 

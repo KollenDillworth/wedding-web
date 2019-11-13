@@ -7,4 +7,6 @@ body{
     min-height: 100%;
     overflow-x: hidden;
     margin-top: 56px !important;
+    font-family: cursive !important;
+    background-color: whitesmoke !important;
 }
