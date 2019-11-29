@@ -3,11 +3,21 @@ html{
     height: 100%;
     overflow-x: hidden;
 }
-html, body{
+body{
     min-height: 100%;
     overflow-x: hidden;
     margin-top: 56px !important;
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    font-family: 'quicksand' !important;
     background-color: #e9e9e9 !important;
+}
+
+@font-face {
+    font-family: quicksand;
+    src: url(assets/fonts/Quicksand-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: quicksandbold;
+    src: url(assets/fonts/Quicksand-Bold.otf) format("opentype");
 }
 /* sage color #c2ccb8 */
