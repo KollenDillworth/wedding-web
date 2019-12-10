@@ -11,28 +11,40 @@
 }
 
 
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  /* width: 380px; */
+  background-color: transparent;
+  /* height: 454px; */
+  border: 0;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
-    /* position: relative;
+    position: relative;
     width: 100%;
     height: 100%;
-    text-align: center; */
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    text-align: left;
+    /* transition: transform 0.8s; */
+    /* transform-style: preserve-3d; */
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  } */
+
+  .flip-card:hover .flip-card-front {
     transform: rotateY(180deg);
   }
+
+  .flip-card:hover .flip-card-back {
+    transform: rotateY(360deg);
+  }
+
+
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
@@ -42,9 +54,120 @@
     backface-visibility: hidden;
   }
   
+  .flip-card-front{
+    /* background-color: #fff; */
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+  }
 
   
   /* Style the back side */
   .flip-card-back {
     transform: rotateY(180deg);
+    width: 348px;
+    height: 454px; 
+    color: black;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+   
   }
+
+@media (max-width: 575.98px) { 
+
+  .flip-card {
+    height: 454px;
+    max-width: 345px;
+    max-height: 454px; 
+    }
+  .flip-card-back {
+    max-width: 345px;
+    max-height: 372px; 
+  }
+  .front-bottom-portion{
+    height: 106px;
+  }
+
+  .back-bottom-portion{
+    height: 106px;
+  }
+
+  .pic-wh{
+    width: 345px;
+    height: 345px;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .flip-card-back {
+    width: 238px;
+    height: 372px; 
+  }
+  .front-bottom-portion{
+    height: 106px;
+  }
+
+  .back-bottom-portion{
+    height: 106px;
+  }
+
+  .pic-wh{
+    width: 238px;
+    height: 238px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .flip-card-back {
+    width: 329px;
+    height: 454px; 
+  }
+  .front-bottom-portion{
+    height: 104px;
+  }
+
+  .back-bottom-portion{
+    height: 104px;
+  }
+
+  .pic-wh{
+    width: 329px;
+    height: 329px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+  .flip-card-front, .flip-card-inner{
+    height: 394px; 
+  }
+
+  .flip-card-back {
+    width: 289px;
+    height: 394px; 
+  }
+
+  .front-bottom-portion{
+    height: 104px;
+  }
+
+  .back-bottom-portion{
+    height: 104px;
+  }
+
+  .pic-wh{
+    width: 289px;
+    height: 289px;
+  }
+ }
+
+@media (min-width: 1200px) { 
+  .flip-card-back {
+    width: 348px;
+    height: 454px; 
+  }
+  .pic-wh{
+    width: 348px;
+    height: 348px;
+  }
+}
