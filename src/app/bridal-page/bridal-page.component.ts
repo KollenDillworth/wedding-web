@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BridalPageComponent implements OnInit {
 
+  tabIndex = 0;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onTabClick(index){
+    this.tabIndex = index;
   }
 
 }

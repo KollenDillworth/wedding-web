@@ -59,7 +59,7 @@
                     </div>
                 </div>
           </div> -->
-          <div class="flip-card card mb-4" style="background-color: transparent !important; border: 0;">
+          <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                       <div class="bridal-box-shadow">
@@ -81,17 +81,48 @@
                   </div>
                 </div>
             </div>
+
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" [ngClass]="{'rotate-card-front': tabIndex === 1, '': tabIndex === 0}">
+                          <div class="bridal-box-shadow">
+                              <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/natalie.jpg" alt="Card image cap">
+                              <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                  <h4 class="card-title">Natalie Henes</h4>
+                                  <p class="card-text float-left">Maid of Honor</p>
+                                  <div class="text-right">
+                                        <button (click)="onTabClick(1)" class="btn btn-primary">Flip</button>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="flip-card-back" [ngClass]="{'rotate-card-back': tabIndex === 1, '': tabIndex === 0}">
+                          <div class="bridal-box-shadow">
+                              <div class="card-img-top pic-wh" style="background-color: #fff;"></div>
+                              <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Natalie Henes</h4>
+                                <p class="card-text float-left">Maid of Honor</p>
+                                <div class="text-right">
+                                        <button (click)="onTabClick(0)" class="btn btn-primary">Flip</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            
             
 
 
 
-          <div class="card mb-4 bridal-box-shadow">
+          <!-- <div class="card mb-4 bridal-box-shadow">
               <img class="card-img-top img-fluid" src="/assets/images/lauren.jpg" alt="Card image cap">
               <div class="card-body">
                   <h4 class="card-title">Lauren Spintig</h4>
                   <p class="card-text">Maid of Honor</p>
               </div>
-          </div>
+          </div> -->
 
 
           <div class="w-100 d-none d-sm-block d-lg-none"></div>
@@ -146,7 +177,7 @@
               </div>
           </div>
           <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
+              <img class="card-img-top img-fluid" src="/assets/images/bob.JPG" alt="Card image cap">
               <div class="card-body">
                   <h4 class="card-title">Robert Heng</h4>
                   <p class="card-text">Groomsman</p>
@@ -155,7 +186,7 @@
           <div class="w-100 d-none d-sm-block d-lg-none"></div>
           <!-- <div class="w-100 d-none d-sm-block d-md-none"></div> -->
           <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
+              <img class="card-img-top img-fluid" src="/assets/images/erin.jpeg" alt="Card image cap">
               <div class="card-body">
                   <h4 class="card-title">Aaron Hasson</h4>
                   <p class="card-text">Groomsman</p>
