@@ -7,14 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BridalPageComponent implements OnInit {
 
-  tabIndex = 0;
+  natIndex = 0;
+  laurenIndex = 0;
+  catIndex = 0;
+  kaylaIndex = 0;
+  kristenIndex = 0;
+  camiIndex = 0;
   constructor() { }
 
   ngOnInit() {
   }
 
-  onTabClick(index){
-    this.tabIndex = index;
+  onNatInfoClick(index){
+    this.natIndex = index;
+  }
+
+  onLaurenInfoClick(index){
+    this.laurenIndex = index;
+  }
+
+  onCatInfoClick(index){
+    this.catIndex = index;
+  }
+
+  onKaylaInfoClick(index){
+    this.kaylaIndex = index;
+  }
+
+  onKristenInfoClick(index){
+    this.kristenIndex = index;
+  }
+
+  onCamiInfoClick(index){
+    this.camiIndex = index;
   }
 
 }

@@ -10,7 +10,13 @@
   box-shadow: 0 0.32rem 0.32rem 0 rgba(0,0,0,.1);
 }
 
+.qs-bold{
+  font-family: 'quicksandbold';
+}
 
+.back-bottom-portion, .front-bottom-portion{
+  border-radius: .25rem;
+}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -120,6 +126,11 @@
     height: 345px;
   }
 
+  .backside-text{
+    position: relative;
+    top: 40%;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -142,6 +153,10 @@
     width: 238px;
     height: 238px;
   }
+  .backside-text{
+    position: relative;
+    top: 20%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -163,6 +178,10 @@
   .pic-wh{
     width: 329px;
     height: 329px;
+  }
+  .backside-text{
+    position: relative;
+    top: 33%;
   }
 }
 
@@ -189,9 +208,17 @@
     width: 289px;
     height: 289px;
   }
+
+  .backside-text{
+    position: relative;
+    top: 30%;
+  }
  }
 
 @media (min-width: 1200px) { 
+  .flip-card {
+    height: 454px;
+  }
   .flip-card-back {
     width: 348px;
     height: 454px; 
@@ -199,5 +226,18 @@
   .pic-wh{
     width: 348px;
     height: 348px;
+  }
+
+  /* .front-bottom-portion{
+    height: 106px;
+  }
+  */
+  .back-bottom-portion{
+    height: 104px;
+  }
+
+  .backside-text{
+    position: relative;
+    top: 40%;
   }
 }
