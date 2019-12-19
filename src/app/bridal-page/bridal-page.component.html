@@ -1,295 +1,435 @@
 <div class="container mt-5">
-  <div class="text-center">
-    <h1>Bridesmaids</h1>
-  </div>
-  <section class="">
-      <div class="card-deck">
+    <div class="text-center mb-3">
+        <h1>Bridesmaids</h1>
+    </div>
+    <section class="">
+        <div class="card-deck">
+            <!-- Natalie -->
             <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front" [ngClass]="{'rotate-card-front': natIndex === 1, '': natIndex === 0}">
-                          <div class="bridal-box-shadow">
-                              <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/natalie.jpg" alt="Card image cap">
-                              <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                                  <h4 class="card-title">Natalie Henes</h4>
-                                  <p class="card-text float-left">Maid of Honor</p>
-                                  <div class="text-right qs-bold">
-                                        <a (click)="onNatInfoClick(1)" class="cursor-pointer">Info ></a>
-                                  </div>
-                                  
-                              </div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back" [ngClass]="{'rotate-card-back': natIndex === 1, '': natIndex === 0}">
-                          <div class="bridal-box-shadow">
-                              <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                                <p class="backside-text">Teacher by day, world-traveling-foodie by night. Natalie and Cassidy met in the fall of 2013 during their 
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': natIndex === 1, '': natIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/natalie.jpg" alt="Natalie">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Natalie Henes</h4>
+                                <p class="card-text float-left">Maid of Honor</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onNatInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': natIndex === 1, '': natIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    Teacher by day, world-traveling-foodie by night. Natalie and Cassidy met in the fall of 2013 during their 
                                     sorority big/little, when their big sis took them both as little making them twins forever.
                                 </p>
-                                
-                              </div>
-                              <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
                                 <h4 class="card-title"></h4>
                                 <p class="card-text float-left"></p>
                                 <br />
                                 <div class="text-right qs-bold">
-                                    <a (click)="onNatInfoClick(0)" class="cursor-pointer">< Back</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                                    <a (click)="onNatInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front" [ngClass]="{'rotate-card-front': laurenIndex === 1, '': laurenIndex === 0}">
-                          <div class="bridal-box-shadow">
-                              <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/lauren.jpg" alt="Card image cap">
-                              <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                                  <h4 class="card-title">Lauren Spintig</h4>
-                                  <p class="card-text float-left">Maid of Honor</p>
-                                  <div class="text-right qs-bold">
-                                        <a (click)="onLaurenInfoClick(1)" class="cursor-pointer">Info ></a>
-                                  </div>
-                                  
-                              </div>
-                          </div>
-                      </div>
-                      <div class="flip-card-back" [ngClass]="{'rotate-card-back': laurenIndex === 1, '': laurenIndex === 0}">
-                          <div class="bridal-box-shadow">
-                              <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                                <p class="backside-text">Arizona grown, New York City living high school history teacher. Lauren and Cassidy experience middle school, high school and 
+            </div>
+            <!-- Lauren -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': laurenIndex === 1, '': laurenIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/lauren.jpg" alt="Lauren">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Lauren Spintig</h4>
+                                <p class="card-text float-left">Maid of Honor</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onLaurenInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': laurenIndex === 1, '': laurenIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    Arizona grown, New York City living high school history teacher. Lauren and Cassidy experience middle school, high school and 
                                     college years by each other’s sides - from being roommates to traveling coast to coast their friends for life.
                                 </p>
-                              </div>
-                              <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
                                 <h4 class="card-title"></h4>
                                 <p class="card-text float-left"></p>
                                 <br />
                                 <div class="text-right qs-bold">
-                                    <a (click)="onLaurenInfoClick(0)" class="cursor-pointer">< Back</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                                    <a (click)="onLaurenInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-
-
-          <div class="w-100 d-none d-sm-block d-lg-none"></div>
-
-          <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-            <div class="flip-card-inner">
-              <div class="flip-card-front" [ngClass]="{'rotate-card-front': catIndex === 1, '': catIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/catherine.jpg" alt="Card image cap">
-                      <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                          <h4 class="card-title">Catherine Bullington</h4>
-                          <p class="card-text float-left">Bridesmaid</p>
-                          <div class="text-right qs-bold">
-                                <a (click)="onCatInfoClick(1)" class="cursor-pointer">Info ></a>
-                          </div>
-                          
-                      </div>
-                  </div>
-              </div>
-              <div class="flip-card-back" [ngClass]="{'rotate-card-back': catIndex === 1, '': catIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                        <p class="backside-text">Introduced by Natalie, Catherine and Cassidy met during sorority recruitment practice, shared the line during flag football
-                             season and share a love for Disney these ladies
-                        </p>
-                      </div>
-                      <div class="card-body back-bottom-portion" style="background-color: #fff;">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text float-left"></p>
-                        <br />
-                        <div class="text-right qs-bold">
-                            <a (click)="onCatInfoClick(0)" class="cursor-pointer">< Back</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-lg-none"></div>
+            <!-- Catherine -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': catIndex === 1, '': catIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/catherine.jpg" alt="Catherine">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Catherine Bullington</h4>
+                                <p class="card-text float-left">Bridesmaid</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onCatInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': catIndex === 1, '': catIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    Introduced by Natalie, Catherine and Cassidy met during sorority recruitment practice, shared the line during flag 
+                                    football season and share a love for hiking Arizona mountains, easily becomming one of Cassidy's BFFs. 
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onCatInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-none d-lg-block"></div>
+            <!-- Kayla -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': kaylaIndex === 1, '': kaylaIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/kayla.jpg" alt="Kayla">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Kayla Stebbing</h4>
+                                <p class="card-text float-left">Bridesmaid</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onKaylaInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': kaylaIndex === 1, '': kaylaIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onKaylaInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-lg-none"></div>
+            <!-- Kristen -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': kristenIndex === 1, '': kristenIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/kristen.JPG" alt="Kristen">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Kristen Bolte</h4>
+                                <p class="card-text float-left">Bridesmaid</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onKristenInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': kristenIndex === 1, '': kristenIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onKristenInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cami -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': camiIndex === 1, '': camiIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/cami.jpg" alt="Cami">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Cami Perez</h4>
+                                <p class="card-text float-left">Bridesmaid</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onCamiInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': camiIndex === 1, '': camiIndex === 0}">
+                        <div class="bridal-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onCamiInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-          <div class="w-100 d-none d-lg-block"><!-- wrap every 3 on md--></div>
-
-          <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-            <div class="flip-card-inner">
-              <div class="flip-card-front" [ngClass]="{'rotate-card-front': kaylaIndex === 1, '': kaylaIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/kayla.jpg" alt="Card image cap">
-                      <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                          <h4 class="card-title">Kayla Stebbing</h4>
-                          <p class="card-text float-left">Bridesmaid</p>
-                          <div class="text-right qs-bold">
-                                <a (click)="onKaylaInfoClick(1)" class="cursor-pointer">Info ></a>
-                          </div>
-                          
-                      </div>
-                  </div>
-              </div>
-              <div class="flip-card-back" [ngClass]="{'rotate-card-back': kaylaIndex === 1, '': kaylaIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                        <p class="backside-text">
-                            placeholder text
-                        </p>
-                      </div>
-                      <div class="card-body back-bottom-portion" style="background-color: #fff;">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text float-left"></p>
-                        <br />
-                        <div class="text-right qs-bold">
-                            <a (click)="onKaylaInfoClick(0)" class="cursor-pointer">< Back</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+    </section>
+    <div class="text-center mt-4 mb-3">
+        <h1>Groomsmen</h1>
+    </div>
+    <section class="">
+        <div class="card-deck">
+            <!-- Dillon -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': dillonIndex === 1, '': dillonIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/dillon.jpg" alt="Dillon">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Dillon Luther</h4>
+                                <p class="card-text float-left">Best Man</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onDillonInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': dillonIndex === 1, '': dillonIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onDillonInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bob -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': bobIndex === 1, '': bobIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/bob.JPG" alt="Bob">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Robert Heng</h4>
+                                <p class="card-text float-left">Groomsman</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onBobInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': bobIndex === 1, '': bobIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onBobInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-lg-none"></div>
+            <!-- Erin -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': erinIndex === 1, '': erinIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/erin.jpeg" alt="Erin">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Aaron Hasson</h4>
+                                <p class="card-text float-left">Groomsman</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onErinInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': erinIndex === 1, '': erinIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onErinInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-none d-lg-block"></div>
+            <!-- Xavier -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': xavierIndex === 1, '': xavierIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/xavier.jpg" alt="Xavier">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Xavier Walker</h4>
+                                <p class="card-text float-left">Groomsman</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onXavierInfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': xavierIndex === 1, '': xavierIndex === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onXavierInfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-lg-none"></div>
+            <!-- Stephen M -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': stephen1Index === 1, '': stephen1Index === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/xavier.jpg" alt="Stephen M">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Stephen Muldoon</h4>
+                                <p class="card-text float-left">Groomsman</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onStephen1InfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': stephen1Index === 1, '': stephen1Index === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onStephen1InfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Stephen T -->
+            <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" [ngClass]="{'rotate-card-front': stephen2Index === 1, '': stephen2Index === 0}">
+                        <div class="groom-box-shadow">
+                            <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/xavier.jpg" alt="Stephen T">
+                            <div class="card-body front-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title">Stephen Tafoya</h4>
+                                <p class="card-text float-left">Groomsman</p>
+                                <div class="text-right qs-bold">
+                                    <a (click)="onStephen2InfoClick(1)" class="cursor-pointer">Info &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" [ngClass]="{'rotate-card-back': stephen2Index === 1, '': stephen2Index === 0}">
+                        <div class="groom-box-shadow">
+                            <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
+                                <p class="backside-text">
+                                    placeholder text
+                                </p>
+                            </div>
+                            <div class="card-body back-bottom-portion" style="background-color: #fff;">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text float-left"></p>
+                                <br />
+                                <div class="text-right qs-bold">
+                                    <a (click)="onStephen2InfoClick(0)" class="cursor-pointer">&lt; Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-          
-        <div class="w-100 d-none d-sm-block d-lg-none"></div>
-
-        <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-            <div class="flip-card-inner">
-              <div class="flip-card-front" [ngClass]="{'rotate-card-front': kristenIndex === 1, '': kristenIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/kristen.JPG" alt="Card image cap">
-                      <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                          <h4 class="card-title">Kristen Bolte</h4>
-                          <p class="card-text float-left">Bridesmaid</p>
-                          <div class="text-right qs-bold">
-                                <a (click)="onKristenInfoClick(1)" class="cursor-pointer">Info ></a>
-                          </div>
-                          
-                      </div>
-                  </div>
-              </div>
-              <div class="flip-card-back" [ngClass]="{'rotate-card-back': kristenIndex === 1, '': kristenIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                        <p class="backside-text">
-                            placeholder text
-                        </p>
-                      </div>
-                      <div class="card-body back-bottom-portion" style="background-color: #fff;">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text float-left"></p>
-                        <br />
-                        <div class="text-right qs-bold">
-                            <a (click)="onKristenInfoClick(0)" class="cursor-pointer">< Back</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="flip-card card mb-4 shove-card" style="background-color: transparent !important; border: 0;">
-            <div class="flip-card-inner">
-              <div class="flip-card-front" [ngClass]="{'rotate-card-front': camiIndex === 1, '': camiIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <img class="card-img-top img-fluid" style="background-color: #fff;" src="/assets/images/cami.jpg" alt="Card image cap">
-                      <div class="card-body front-bottom-portion" style="background-color: #fff;">
-                          <h4 class="card-title">Cami Perez</h4>
-                          <p class="card-text float-left">Bridesmaid</p>
-                          <div class="text-right qs-bold">
-                                <a (click)="onCamiInfoClick(1)" class="cursor-pointer">Info ></a>
-                          </div>
-                          
-                      </div>
-                  </div>
-              </div>
-              <div class="flip-card-back" [ngClass]="{'rotate-card-back': camiIndex === 1, '': camiIndex === 0}">
-                  <div class="bridal-box-shadow">
-                      <div class="card-img-top pic-wh pl-3 pr-3 text-center" style="background-color: #fff;">
-                        <p class="backside-text">
-                            placeholder text
-                        </p>
-                      </div>
-                      <div class="card-body back-bottom-portion" style="background-color: #fff;">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text float-left"></p>
-                        <br />
-                        <div class="text-right qs-bold">
-                            <a (click)="onCamiInfoClick(0)" class="cursor-pointer">< Back</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-
-          <!-- <div class="card mb-4 bridal-box-shadow">
-              <img class="card-img-top img-fluid" src="/assets/images/cami.jpg" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Cami Perez</h4>
-                  <p class="card-text">Bridesmaid</p>
-              </div>
-          </div> -->
-      </div>
-  </section>
-  <div class="text-center">
-      <h1>Groomsmen</h1>
-  </div>
-  <section class="">
-      <div class="card-deck">
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="/assets/images/dillon.jpg" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Dillon Luther</h4>
-                  <p class="card-text">Best Man</p>
-              </div>
-          </div>
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="/assets/images/bob.JPG" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Robert Heng</h4>
-                  <p class="card-text">Groomsman</p>
-              </div>
-          </div>
-          <div class="w-100 d-none d-sm-block d-lg-none"></div>
-          <!-- <div class="w-100 d-none d-sm-block d-md-none"></div> -->
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="/assets/images/erin.jpeg" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Aaron Hasson</h4>
-                  <p class="card-text">Groomsman</p>
-              </div>
-          </div>
-          <div class="w-100 d-none d-lg-block"><!-- wrap every 3 on md--></div>
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="/assets/images/xavier.jpg" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Xavier Walker</h4>
-                  <p class="card-text">Groomsman</p>
-              </div>
-          </div>
-          <!-- <div class="w-100 d-none d-sm-block d-lg-none"></div>
-           <div class="w-100 d-none d-lg-block d-xl-none"></div> -->
-           <div class="w-100 d-none d-sm-block d-lg-none"></div>
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Stephen Muldoon</h4>
-                  <p class="card-text">Groomsman</p>
-              </div>
-          </div>
-          <!-- <div class="w-100 d-none d-xl-block"></div> -->
-          <div class="card mb-4 groom-box-shadow">
-              <img class="card-img-top img-fluid" src="//placehold.it/500x300" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title">Stephen Tafoya</h4>
-                  <p class="card-text">Groomsman</p>
-              </div>
-          </div>
-          <!-- <div class="w-100 d-none d-sm-block d-md-none"></div>
-          <div class="w-100 d-none d-md-block d-lg-none"></div> -->
-      </div>
-  </section>
+    </section>
 </div>
 
 
