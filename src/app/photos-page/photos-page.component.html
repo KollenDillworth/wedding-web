@@ -1,3 +1,48 @@
 <p>
   photos-page works!
 </p>
+<div class="container">
+
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <a (click)="closeModal()">
+        <span class="close">&times;</span>
+    </a>
+    
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01" src="{{srcValue}}">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-4">
+      <a (click)="expandImage('myImg')">
+          <img id="myImg" class="img-thumbnail" src="/assets/images/natalie.jpg" alt="Natalie">
+      </a>
+      
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+        <img class="img-thumbnail" src="/assets/images/cami.jpg" alt="Natalie">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <img class="img-thumbnail" src="/assets/images/bob.JPG" alt="Natalie">
+    </div>
+    
+    <div class="col-12 col-sm-6 col-lg-4 mt-2">
+      <img class="img-thumbnail" src="/assets/images/catherine.jpg" alt="Natalie">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 mt-2">
+        <img class="img-thumbnail" src="/assets/images/dillon.jpg" alt="Natalie">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mt-2">
+          <img class="img-thumbnail" src="/assets/images/kayla.jpg" alt="Natalie">
+        </div>
+  </div>
+</div>
+
