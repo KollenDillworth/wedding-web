@@ -2,7 +2,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 70px; /* Location of the box */
+    padding-top: 150px; 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -15,8 +15,8 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 95%;
+    max-width: 600px;
   }
 
   #caption {
@@ -58,8 +58,41 @@
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  /* @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
     }
+  } */
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .modal-content {
+      width: 80%;
+      max-width: 400px;
+    }
+
+    .modal {
+      padding-top: 180px;
+    }
   }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .modal-content {
+      width: 80%;
+      max-width: 500px;
+    }
+
+    .modal {
+      padding-top: 180px;
+    }
+  }
+/* 
+  @media (min-width: 1200px) { 
+    .modal-content {
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .modal {
+      padding-top: 150px;
+    }
+  } */
