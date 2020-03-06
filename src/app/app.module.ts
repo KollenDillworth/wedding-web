@@ -10,6 +10,7 @@ import { TheWeddingPageComponent } from './the-wedding-page/the-wedding-page.com
 import { OurStoryPageComponent } from './our-story-page/our-story-page.component';
 import { PhotosPageComponent } from './photos-page/photos-page.component';
 import { RegistryPageComponent } from './registry-page/registry-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegistryPageComponent } from './registry-page/registry-page.component';
     TheWeddingPageComponent,
     OurStoryPageComponent,
     PhotosPageComponent,
-    RegistryPageComponent
+    RegistryPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
