@@ -46,6 +46,14 @@
     font-size: 40px;
 }
 
+.couple-text-sub{
+    font-size: 35px;
+}
+
+.countdown-size{
+    font-size: 18px;
+}
+
 @media (min-width: 1200px) { 
     
     .bg-cover{
@@ -116,4 +124,10 @@
         font-size: 30px;  
         color: #ffffff;
     }
+    }
+
+    @media (max-width: 426px) { 
+        .countdown-margin{
+            margin-bottom: 30px;
+        }
     }
